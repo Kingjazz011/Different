@@ -39,7 +39,7 @@ const products = [
         const it = cart[k];
         return `
           <div class="cart-item">
-            <img src="${it.img}" alt="${it.name}" />
+            <img src="${it.img}" alt="${it.name}">
             <div style="flex:1">
               <div style="font-weight:700">${it.name}</div>
               <div style="color:var(--muted);font-size:13px">$${currency(it.price)} × ${it.qty}</div>
@@ -91,7 +91,7 @@ const products = [
           const p = products.find(x=>x.id===id);
           if(!p) return;
           // open quick product modal (simple confirm)
-          const ok = confirm(`Add ${p.name} — $${currency(p.price)} to your bag?`);
+          const ok = confirm(`Add ${p.name} — $${currency(p.price)} to your cart?`);
           if(ok) addToCart(id,1);
         })
       });
@@ -106,9 +106,9 @@ const products = [
 
     // Checkout (demo)
     document.getElementById('checkout').addEventListener('click',()=>{
-      if(Object.keys(cart).length===0){ alert('Your bag is empty'); return; }
+      if(Object.keys(cart).length===0){ alert('Your cart is empty'); return; }
       const total = Object.keys(cart).reduce((s,k)=>s+cart[k].price*cart[k].qty,0);
-      alert('Checkout — Total: $' + currency(total) + '\n\n(Payment page loading)');
+      alert('Checkout — Total: $' + currency(total) + '\n\nPayment page Coming Soon.... :)');
     });
 
     // init
