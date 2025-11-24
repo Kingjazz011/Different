@@ -26,7 +26,8 @@
     }
 
     a{color:inherit;
-      text-decoration:none;}
+      text-decoration:none;
+    }
 
     /* --------------- Container --------------- */
     .site{
@@ -43,18 +44,28 @@
       margin-bottom:22px;
     }
     .logo{font-weight:700;
-      letter-spacing:1px;}
+      letter-spacing:1px;
+    }
     .logo .brand{font-family: 'Oswald', Impact, Arial;
-      font-weight:700; font-size:20px}
-    .logo .sub{font-size:12px;color:var(--muted);margin-left:6px}
+      font-weight:700; font-size:20px
+    }
+    .logo .sub{font-size:12px;
+      color:var(--muted);
+      margin-left:6px
+    }
 
-    nav{display:flex;gap:18px;align-items:center}
-    nav a{font-size:14px;color:var(--muted)}
+    nav{display:flex;gap:18px;
+      align-items:center
+    }
+    nav a{font-size:14px;
+      color:var(--muted)
+    }
 
     .nav-cta{background:var(--accent-1);
       color:#fff;padding:10px 14px;
       border-radius:10px;
-      font-weight:600}
+      font-weight:600
+    }
 
     /* --------------- Hero --------------- */
     .hero{
@@ -70,7 +81,11 @@
       border-radius:18px;
       box-shadow:var(--shadow);
     }
-    .eyebrow{font-size:12px; text-transform:uppercase; letter-spacing:1.6px; color:var(--muted)}
+    .eyebrow{font-size:12px; 
+      text-transform:uppercase; 
+      letter-spacing:1.6px; 
+      color:var(--muted)
+    }
     .hero h1{
       margin:12px 0 8px 0;
       font-family: 'Oswald', Impact, Arial;
@@ -79,32 +94,52 @@
       letter-spacing:1px;
     }
     .hero p{color:var(--muted);
-      margin:0 0 18px 0}
+      margin:0 0 18px 0
+    }
     .hero .cta-row{display:flex;
-      gap:12px}
+      gap:12px
+    }
     .btn{display:inline-flex;
       align-items:center;
       gap:8px;
       padding:12px 16px;
       border-radius:12px;
-      font-weight:600}
+      font-weight:600
+    }
     .btn.primary{background:var(--accent-1);
-      color:white}
+      color:white
+    }
     .btn.ghost{background:transparent;
-      border:1px solid rgba(0,0,0,0.06)}
+      border:1px solid rgba(0,0,0,0.06)
+    }
 
     /* hero right image card */
     .card-media{position:relative;
       border-radius:18px;
       overflow:hidden;
-      box-shadow:var(--shadow)}
+      box-shadow:var(--shadow)
+    }
     .card-media img{width:100%;
-      height:100%;object-fit:cover;display:block}
-    .media-tag{position:absolute;left:14px;bottom:14px;background:rgba(0,0,0,0.7);color:#fff;padding:8px 10px;border-radius:8px;font-size:13px}
+      height:100%;
+      object-fit:cover;
+      display:block
+    }
+    .media-tag{position:absolute;
+      left:14px;
+      bottom:14px;
+      background:rgba(0,0,0,0.7);
+      color:#fff;
+      padding:8px 10px;
+      border-radius:8px;
+      font-size:13px
+    }
 
     /* --------------- Featured Collection --------------- */
-    .section{margin:32px 0}
-    .section h2{font-size:20px;margin-bottom:12px}
+    .section{margin:32px 0
+    }
+    .section h2{font-size:20px;
+      margin-bottom:12px
+    }
 
     .grid{
       display:grid;
@@ -120,18 +155,41 @@
       transition:transform .28s ease, box-shadow .28s ease;
       position:relative;
     }
-    .product:hover{transform:translateY(-8px);box-shadow:0 24px 40px rgba(36,107,253,0.08)}
+    .product:hover{transform:translateY(-8px);
+      box-shadow:0 24px 40px rgba(36,107,253,0.08)}
 
-    .thumb{height:320px;border-radius:10px;overflow:hidden;display:block}
-    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .thumb{height:320px;
+      border-radius:10px;
+      overflow:hidden;
+      display:block
+    }
+    .thumb img{width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block
+    }
 
-    .meta{display:flex;justify-content:space-between;align-items:center;padding-top:10px}
+    .meta{display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding-top:10px
+    }
     .name{font-weight:700}
-    .price{font-weight:700;color:var(--accent-1)}
+    .price{font-weight:700;
+      color:var(--accent-1)
+    }
 
     /* Hover streetwear accent */
-    .product .overlay{position:absolute;inset:12px;border-radius:10px;pointer-events:none;mix-blend-mode:screen;opacity:0;transition:opacity .25s}
-    .product:hover .overlay{opacity:1;background:linear-gradient(135deg, rgba(36,107,253,0.06), rgba(255,42,42,0.03))}
+    .product .overlay{position:absolute;
+      inset:12px;
+      border-radius:10px;
+      pointer-events:none;
+      mix-blend-mode:screen;
+      opacity:0;
+      transition:opacity .25s
+    }
+    .product:hover .overlay{opacity:1;
+      background:linear-gradient(135deg, rgba(36,107,253,0.06), rgba(255,42,42,0.03))}
 
     .quick-add{position:absolute;right:16px;top:16px;background:linear-gradient(90deg,var(--accent-2),var(--accent-1));padding:8px;border-radius:10px;color:#111;font-weight:700;cursor:pointer}
 
